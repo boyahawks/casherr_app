@@ -1,0 +1,288 @@
+.center {
+    text-align: center;
+}
+
+.styleButton {
+    border-radius: 20px;
+}
+
+.ListMenu {
+    h5 {
+        margin: 25px 0px 25px 0px;
+        font-size: 36px;
+        color: white;
+    }
+
+    .line1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .list-group {
+            display: grid !important;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            height: auto;
+            margin: 10px 5px 20px 5px;
+        }
+
+        .active {
+            background-color: rgb(2, 19, 93);
+            color: white;
+        }
+
+        .list-group-item {
+            text-align: center;
+            border: 1px solid;
+            border-radius: 20px;
+            cursor: pointer;
+            padding: 10px 0px 0px 0px;
+        }
+    }
+
+    .line2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0px 0px 10px 0px;
+
+        .list-group {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            height: auto;
+            margin: 10px 5px 20px 5px;
+        }
+
+        .list-group-item {
+            background: #f7f7f7;
+            padding: 1em;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .checkboxX .form-check-input {
+            text-align: left;
+            position: absolute;
+            font-size: 30px;
+        }
+
+        img {
+            border-radius: 10%;
+            margin: 0px 0px 15px 0px;
+            vertical-align: middle;
+            object-fit: contain;
+            width: 100%;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .footer {
+        overflow: hidden;
+        position: fixed;
+        text-align: right;
+        bottom: 0;
+        width: 100%;
+        padding: 0px 15px 0px 0px;
+        color: white;
+
+        .jml-pesan {
+            position: absolute;
+            right: 0;
+            padding: 0px 25px 0px 0px;
+            font-size: 25px;
+
+        }
+
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0px 25px 10px 0px;
+
+            i {
+                font-size: 25px;
+                color: rgb(1, 1, 34);
+            }
+        }
+    }
+
+
+}
+
+#modalPilihMenu {
+    #qtyPesan {
+        width: 20%;
+        margin: auto;
+        border-radius: 15px 15px 15px 15px;
+        border: 0.5px solid grey;
+        text-align: center;
+    }
+}
+
+.formQtyPesanan {
+    position: absolute;
+}
+
+#detailQtyBeli {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    border-radius: 30%;
+    border: 0.1px solid rgb(235, 234, 234);
+    text-align: center;
+}
+
+.gambarDetailPemesanan {
+    vertical-align: middle;
+    object-fit: contain;
+    width: 100%;
+}
+
+#modalDetailPemesanan {
+    --bs-modal-width: 2000px;
+
+    .modal-content {
+        border: none;
+        background-color: white;
+        overflow: scroll;
+        position: fixed;
+        text-align: right;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .wrapImage {
+        height: 250px;
+    }
+
+    .modal-footer {
+        display: none;
+    }
+
+    .modal-header {
+        button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(1, 1, 29);
+            color: white;
+        }
+    }
+
+    .decContent {
+        margin: 10px 0px 0px 0px;
+
+        button {
+            margin: 10px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .list-group3 {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        height: auto;
+        margin: 10px 5px 20px 5px;
+    }
+
+    .list-group-item3 {
+        padding: 1em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #totalDibayar {
+        text-align: right;
+        font-weight: bold;
+
+        input {
+            outline: none;
+            border: 0px;
+            margin: 0px 0px 10px 0px;
+            text-decoration: underline;
+            text-align: right;
+
+            :focus {
+                outline: none;
+            }
+        }
+    }
+
+    img {
+        border-radius: 15px;
+        object-fit: contain;
+    }
+
+}
+
+#validasiPesan {
+    .modal-header {
+        button {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .ListMenu {
+        h5 {
+            font-size: 30px;
+        }
+
+        .line1 {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            .list-group {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 20px;
+                height: auto;
+                margin: 10px 5px 20px 5px;
+            }
+        }
+
+        .line2 {
+            margin: 0px 0px 100px 0px;
+            .checkboxX .form-check-input {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+        .footer {
+            color: rgb(163, 161, 161);
+        }
+
+    }
+    #modalDetailPemesanan {
+        .wrapImage {
+            height: 100px;
+        }
+        .list-group3 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
